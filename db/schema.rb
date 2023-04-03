@@ -11,7 +11,7 @@
 # It's strongly recommended that you check this file into your version control system.
 
 ActiveRecord::Schema[7.0].define(version: 2023_03_26_101546) do
-  create_table "heropowers", force: :cascade do |t|
+  create_table "hero_powers", force: :cascade do |t|
     t.string "strength"
     t.integer "power_id"
     t.integer "hero_id"

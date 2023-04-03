@@ -9,4 +9,9 @@ class HerosController < ApplicationController
         hero = Hero.find(params[:id])
         render json: hero
     end
+
+    private
+    def find_heroes
+        Hero.all
+    end
 end

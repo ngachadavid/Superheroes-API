@@ -1,4 +1,4 @@
-class HeropowersController < ApplicationController
+class HeroPowersController < ApplicationController
 
     def index
         heropowers = HeroPower.all
@@ -6,13 +6,13 @@ class HeropowersController < ApplicationController
     end
 
     def create
-        heropower = HeroPower.create!(heropower_params)
-        render json: heropower, status: :created
+        hero_power = HeroPower.create!(hero_power_params)
+        render json: hero_power, status: :created
     end
 
     private
 
-    def heropower_params
+    def hero_power_params
         params.permit(:strength, :power_id, :hero_id)
     end
 
